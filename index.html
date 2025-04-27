@@ -11,21 +11,26 @@
   <div class="container">
     <h1>Weather App</h1>
     <div class="search-box">
-      <input type="text" placeholder="Your location here!" />
-      <button>Get Weather</button>
+      <input type="text" id="city" placeholder="Enter your City" />
+      <button id="weather-button">Get Today's Weather</button>
     </div>
     <div class="weather-info">
-        <div class="icons"><i class="fa-solid fa-sun" id="icon"></i>
+        <div class="icons">
         </div>
         
-      <h2>13°C</h2>
-      <p class="description">overcast clouds</p>
+      <h2 id="temperature">13°C</h2>
+      <p id="weather-description" class="description">overcast clouds</p>
       <div class="details">
-        <div class="box">Feels like: 33</div>
-        <div class="box">Humidity: 40%</div>
-        <div class="box">Wind speed: 3.14 m/s</div>
+        <div class="box">Feels like: <span class="text" id="feelslike">33</span></div>
+        <div class="box">Humidity: <span class="text" id="humidity">40%</span></div>
+        <div class="box">Wind speed: <span class="text" id="windspeed">3.14 m/s</span></div>
+        <div class="box">Sunrise: <span class="text" id="sunrise">33</span></div>
+        <div class="box">Sunset: <span class="text" id="sunset">33</span></div>
+        <div class="box">Is Day ? <span class="text" id="isday">33</span></div>
       </div>
+      <div class="error-message" id="error-message"></div>
     </div>
   </div>
+  <script src="./index.js"></script>
 </body>
 </html>

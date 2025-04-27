@@ -1,4 +1,4 @@
-const apiKey = "737c6c24c65a24da41c11e643730d43e";
+const apiKey = "c24c63dc10b7ee4319f7a85e2987ebfe";
 const API_URL = "http://api.weatherstack.com/current";
 
 let weatherButton = document.getElementById("weather-button");
